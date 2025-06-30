@@ -1,0 +1,32 @@
+ALGORITHM Sentence-Analyst
+
+VAR
+p : string
+c := 0
+v := 0
+s := 1
+
+begin 
+ p := read()
+ 
+ for i from 1 to p.length do
+    c = c+1
+    if p[i] in ['a' , 'i' , 'o' ,'y', 'e'] then 
+       v = v+1 
+    end if 
+ end for 
+
+ i := 0
+
+ while ( p.length <> 0 ) do 
+           
+      if p[i] == " " then
+         c = c+1
+      end if
+ end while 
+ write ("sentence length :",c)
+ write ("vowels number :",v)
+ write ("words number :",s)
+
+end 
+
